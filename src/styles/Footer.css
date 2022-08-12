@@ -1,0 +1,19 @@
+.footer{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 14px;
+    margin-bottom: 20px;
+    color: #858585;
+    width: 100%;
+}
+.info{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.sum{
+    margin-right: 30px;
+}

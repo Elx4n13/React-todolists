@@ -1,0 +1,32 @@
+.done{
+    text-decoration-line: line-through;
+    color: gray;
+}
+.todosList{
+    background-color: white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-top: 5px;
+    border-bottom: 1px solid gray;
+}
+.todos{
+    margin-top: 30px;
+    background-color: white;
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+    padding: 5px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+#todoTitle{
+    overflow-wrap: break-word;
+    max-width: 93%;
+    margin-right: auto;
+    margin-left: 10px;
+}
+.deleteIcon{
+    font-size: 20px;
+    color: red;
+}

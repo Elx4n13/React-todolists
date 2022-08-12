@@ -1,0 +1,14 @@
+.empty{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    background-color: white;
+    width: 100%;
+    height: fit-content;
+    min-height: 86%;
+    border-radius: 10px 10px 0px 0px;
+}
+.emptys{
+    height: 60vh;
+}

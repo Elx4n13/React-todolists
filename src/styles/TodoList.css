@@ -1,0 +1,13 @@
+.todo-container{
+    margin-top: 3%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: 60%;
+    padding: 5px;
+}
+h1{
+    color: white;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+}
