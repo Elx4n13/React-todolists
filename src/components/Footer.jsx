@@ -9,8 +9,8 @@ const Footer = ({todos,removeAllTodo,count}) => {
     <div className='footer'>
       <div className="info">
         <div className="left">
-        <span className='sum'>Ümumi: {todos.length} tapşırıq</span> 
-        <span> Hazır: {count} tapşırıq</span>
+        <p className='sum'>Ümumi: {todos.length} tapşırıq</p> 
+        <p> Hazır: {count} tapşırıq</p>
 
         </div>
         <div className="right">

@@ -12,3 +12,13 @@
   top: 0;
   left: 0;
 }
+@media (max-width: 750px){
+  html{
+      font-size: 14px;
+  }
+}
+@media (max-width: 550px){
+  html{
+      font-size: 12px;
+  }
+}
