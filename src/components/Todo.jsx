@@ -8,6 +8,7 @@ const Todo = ({todo,completeTodo,removeTodo}) => {
   //bitirmish oldugumuz todonun idsin todoliste gonderirik
   const handleChecked =()=>{
    completeTodo(todo.id)
+   toast.success('Taski bitirdiniz')
   }
   //silmek isdediyimiz todonun idsin todoliste gonderirik
   const handleDel = () =>{
