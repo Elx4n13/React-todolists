@@ -17,9 +17,9 @@ const Todo = ({todo,completeTodo,removeTodo}) => {
   }
   return (
     <div className='todosList'>
-      <label class="control control-checkbox">
+      <label className="control control-checkbox">
             <input type="checkbox" onClick={handleChecked} defaultChecked={todo.completed ? true:false} />
-            <div class="control_indicator"></div>
+            <div className="control_indicator"></div>
         </label>
       <p id="todoTitle"className={todo.completed ? 'done':'undone'}>{todo.title}        {todo.completed}</p>
       <RiDeleteBin5Line className='deleteIcon' onClick={handleDel}/>
