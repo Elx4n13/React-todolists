@@ -11,3 +11,14 @@ h1 {
   font-size: 3.125rem;
   line-height: 60px;
 }
+@media(max-width:1050px){
+    .todo-container{
+        width: 45%;
+    }
+}
+@media(max-width:750px){
+    .todo-container{
+        width: 58%;
+    }
+}
+

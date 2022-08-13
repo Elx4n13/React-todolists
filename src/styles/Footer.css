@@ -16,10 +16,16 @@
 }
 .sum {
   margin-right: 1.875rem;
+  margin-bottom: 10px;
 }
 .left {
   display: flex;
   flex-wrap: wrap;
+}
+@media(max-width:1050px){
+    .footer{
+        font-size: 0.75rem;
+    }
 }
 @media (max-width: 750px) {
   .footer {
@@ -31,7 +37,7 @@
     flex-direction: column;
   }
   .footer {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
   .sum {
     margin-bottom: 10px;
