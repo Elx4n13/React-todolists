@@ -1,29 +1,29 @@
 .formDiv {
-    width: 100%;
-    position: relative;
-    margin-top: 2%;
+  width: 100%;
+  position: relative;
+  margin-top: 2%;
 }
-.todoInput{
-    width: 100%;
-    background: #FFFFFF;
-    border-radius: 10px;
-    outline: none;
-    border: none;
-    padding: 20px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1rem;
-    line-height: 19px;
+.todoInput {
+  width: 100%;
+  background: #ffffff;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  padding: 20px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 19px;
 }
-.add-button{
-    position: absolute;
-    right: 2%;
-    top : 30%;
-    width: 35px;
-    height: 30px;
-    background-color: #00A3FF;
-    border: none;
-    font-size: 1.5rem;
-    border-radius: 5px;
-    color: white;
+.add-button {
+  position: absolute;
+  right: 2%;
+  top: 30%;
+  width: 35px;
+  height: 30px;
+  background-color: #00a3ff;
+  border: none;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  color: white;
 }

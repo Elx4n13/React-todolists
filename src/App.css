@@ -1,9 +1,9 @@
-.container{
+.container {
   width: 100%;
   display: flex;
   justify-content: center;
 }
-.linear{
+.linear {
   width: 100%;
   height: fit-content;
   z-index: -1;
@@ -11,17 +11,17 @@
   top: 0;
   left: 0;
 }
-.linear img{
+.linear img {
   width: 100%;
   height: 250px;
 }
-@media (max-width: 750px){
-  html{
-      font-size: 14px;
+@media (max-width: 750px) {
+  html {
+    font-size: 14px;
   }
 }
-@media (max-width: 550px){
-  html{
-      font-size: 12px;
+@media (max-width: 550px) {
+  html {
+    font-size: 12px;
   }
 }

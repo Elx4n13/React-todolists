@@ -1,31 +1,37 @@
-import React from 'react'
-import '../styles/Todo.css'
-import '../styles/CheckBox.css'
-import {RiDeleteBin5Line} from 'react-icons/ri'
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
-const Todo = ({todo,completeTodo,removeTodo}) => {
+import React from "react";
+import "../styles/Todo.css";
+import "../styles/CheckBox.css";
+import { RiDeleteBin5Line } from "react-icons/ri";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+const Todo = ({ todo, completeTodo, removeTodo }) => {
   //bitirmish oldugumuz todonun idsin todoliste gonderirik
-  const handleChecked =()=>{
-   completeTodo(todo.id)
-   toast.success('Taski bitirdiniz')
-  }
+  const handleChecked = () => {
+    completeTodo(todo.id);
+    toast.success("Taski bitirdiniz");
+  };
   //silmek isdediyimiz todonun idsin todoliste gonderirik
-  const handleDel = () =>{
-    toast.error('Tapshiriq silindi')
-    removeTodo(todo.id)
-  }
+  const handleDel = () => {
+    toast.error("Tapshiriq silindi");
+    removeTodo(todo.id);
+  };
   return (
-    <div className='todosList'>
+    <div className="todosList">
       <label className="control control-checkbox">
-            <input type="checkbox" onClick={handleChecked} defaultChecked={todo.completed ? true:false} />
-            <div className="control_indicator"></div>
-        </label>
-      <p id="todoTitle"className={todo.completed ? 'done':'undone'}>{todo.title}        {todo.completed}</p>
-      <RiDeleteBin5Line className='deleteIcon' onClick={handleDel}/>
+        <input
+          type="checkbox"
+          onClick={handleChecked}
+          defaultChecked={todo.completed ? true : false}
+        />
+        <div className="control_indicator"></div>
+      </label>
+      <p id="todoTitle" className={todo.completed ? "done" : "undone"}>
+        {todo.title} {todo.completed}
+      </p>
+      <RiDeleteBin5Line className="deleteIcon" onClick={handleDel} />
       <ToastContainer />
     </div>
-  )
-}
+  );
+};
 
-export default Todo
+export default Todo;
