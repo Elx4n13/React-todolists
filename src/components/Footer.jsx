@@ -1,9 +1,12 @@
 import React from 'react'
 import '../styles/Footer.css'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 const Footer = ({todos,removeAllTodo,count}) => {
    
     const handleDelAll = () =>{
         removeAllTodo()
+        toast.error('Tapshiriqlarin hamisi silindi')
       }
   return (
     <div className='footer'>
@@ -15,7 +18,7 @@ const Footer = ({todos,removeAllTodo,count}) => {
         </div>
         <div className="right">
         <span onClick={handleDelAll}>Hamısını sil</span>
-
+        <ToastContainer />
         </div>
       </div>
     </div>
