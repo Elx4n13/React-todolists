@@ -1,0 +1,64 @@
+.form-container{
+    width: 100%;
+    position: relative;
+    margin-bottom: 18px;
+    input{
+        width: 100%;
+        outline: none;
+        padding: 25px 65px;
+        border: none;
+        border-radius: 10px;
+        &::placeholder{
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            color: #CECECE;
+        }
+    }
+    button{
+        width: 30px;
+        aspect-ratio: 1/1;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        background: #00A3FF;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        font-size: 25px;
+        font-weight: 100;
+        color: white;
+    }
+}
+@media (max-width: 1350px){
+    .form-container{
+        input{
+            padding: 25px 45px;
+            
+        }
+    }
+  }
+  @media (max-width: 550px){
+    .form-container{
+        input{
+            padding: 15px 25px;
+            
+        }
+        button{
+            width: 25px;
+            aspect-ratio: 1/1;
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            background: #00A3FF;
+            border: none;
+            outline: none;
+            border-radius: 5px;
+            font-size: 18px;
+            font-weight: 100;
+            color: white;
+        }
+    }
+   
+  }

@@ -1,35 +1,27 @@
 import React from "react";
-import "../styles/Todo.css";
-import "../styles/CheckBox.css";
-import { RiDeleteBin5Line } from "react-icons/ri";
-import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
-const Todo = ({ todo, completeTodo, removeTodo }) => {
-  //bitirmish oldugumuz todonun idsin todoliste gonderirik
-  const handleChecked = () => {
-    completeTodo(todo.id);
-    toast.success("Taski bitirdiniz");
+import "../styles/Todo.scss";
+import '../styles/CheckBox.css'
+import { RiDeleteBin5Line } from 'react-icons/ri';
+const Todo = ({ todo, toggleComplete, removeTodo }) => {
+  const handleCheck = () => {
+    toggleComplete(todo.id);
   };
-  //silmek isdediyimiz todonun idsin todoliste gonderirik
-  const handleDel = () => {
-    toast.error("Tapshiriq silindi");
+  const handleDelete = () => {
     removeTodo(todo.id);
   };
   return (
-    <div className="todosList">
+    <div className="todoItem">
       <label className="control control-checkbox">
         <input
+        className="checkInput"
           type="checkbox"
-          onClick={handleChecked}
+          onClick={handleCheck}
           defaultChecked={todo.completed ? true : false}
         />
         <div className="control_indicator"></div>
       </label>
-      <p id="todoTitle" className={todo.completed ? "done" : "undone"}>
-        {todo.title} {todo.completed}
-      </p>
-      <RiDeleteBin5Line className="deleteIcon" onClick={handleDel} />
-      <ToastContainer />
+      <p id="text" className={todo.completed ? 'done':null}>{todo.title}</p>
+      <RiDeleteBin5Line className="deleteItem" onClick={handleDelete} />
     </div>
   );
 };
