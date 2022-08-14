@@ -1,63 +1,60 @@
-.form-container{
+.form-container {
+  width: 100%;
+  position: relative;
+  margin-bottom: 18px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  input {
     width: 100%;
-    position: relative;
-    margin-bottom: 18px;
-    input{
-        width: 100%;
-        outline: none;
-        padding: 25px 65px;
-        border: none;
-        border-radius: 10px;
-        &::placeholder{
-            font-style: normal;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 19px;
-            color: #CECECE;
-        }
+    outline: none;
+    padding: 25px 65px;
+    border: none;
+    border-radius: 10px;
+    &::placeholder {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      color: #cecece;
     }
-    button{
-        width: 30px;
-        aspect-ratio: 1/1;
-        position: absolute;
-        top: 20px;
-        right: 20px;
-        background: #00A3FF;
-        border: none;
-        outline: none;
-        border-radius: 5px;
-        font-size: 25px;
-        font-weight: 100;
-        color: white;
-    }
+  }
+  button {
+    width: 30px;
+    aspect-ratio: 1/1;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: #00a3ff;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 25px;
+    font-weight: 100;
+    color: white;
+  }
 }
-@media (max-width: 750px){
-    .form-container{
-        input{
-            padding: 20px 50px;
-            
-        }
-        button{
-            width: 27px;
-            top: 15px;
-            right: 15px;
-            font-size: 25px;
-        }
+@media (max-width: 750px) {
+  .form-container {
+    input {
+      padding: 20px 50px;
     }
-   
-  }
-  @media (max-width: 550px){
-    .form-container{
-        input{
-            padding: 15px 25px;
-            
-        }
-        button{
-            width: 25px;
-            top: 12px;
-            right: 12px;
-            font-size: 18px;
-        }
+    button {
+      width: 27px;
+      top: 15px;
+      right: 15px;
+      font-size: 25px;
     }
-   
   }
+}
+@media (max-width: 550px) {
+  .form-container {
+    input {
+      padding: 15px 25px;
+    }
+    button {
+      width: 25px;
+      top: 12px;
+      right: 12px;
+      font-size: 18px;
+    }
+  }
+}

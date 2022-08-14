@@ -1,50 +1,49 @@
-.todoItem{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    padding:22px;
-    border-bottom: 1px solid #E0E0E0;
-    &:hover{
-        .deleteItem{
-            visibility: visible;
-        }
+.todoItem {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 22px;
+  border-bottom: 1px solid #e0e0e0;
+  &:hover {
+    .deleteItem {
+      visibility: visible;
     }
-    .done{
-        text-decoration: line-through;
-        color: #B4B4B4 !important;
-    }
-    #text{
-        width: 90%;
-        background-color: transparent;
-        color: #414141;
-        border: none;
-        outline: none;
-        font-family: 'Exo 2';
-        padding-left: 22px;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 19px;
-        word-break: break-all;
-        margin-right: 14px;
-    }
-    .deleteItem{
-        min-width: 20px;
-        font-size: 20px;
-        color: #FF542F;
-        cursor: pointer;
-        visibility: hidden;
-    }
-}
-@media (max-width: 750px){
-    .todoItem{
-        padding:18px;
-        #text{
-            padding-left: 16px;
-            font-size: 16px;
-            line-height: 19px;
-            margin-right: 14px;
-        }
-    }
-   
   }
+  .done {
+    text-decoration: line-through;
+    color: #b4b4b4 !important;
+  }
+  #text {
+    width: 90%;
+    background-color: transparent;
+    color: #414141;
+    border: none;
+    outline: none;
+    font-family: "Exo 2";
+    padding-left: 22px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    word-break: break-all;
+    margin-right: 14px;
+  }
+  .deleteItem {
+    min-width: 20px;
+    font-size: 20px;
+    color: #ff542f;
+    cursor: pointer;
+    visibility: hidden;
+  }
+}
+@media (max-width: 750px) {
+  .todoItem {
+    padding: 18px;
+    #text {
+      padding-left: 16px;
+      font-size: 16px;
+      line-height: 19px;
+      margin-right: 14px;
+    }
+  }
+}

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import '../styles/TodoForm.scss'
+import "../styles/TodoForm.scss";
 const TodoForm = ({ addTodoTitle, warningToast }) => {
   const [inputValue, setInputValue] = useState("");
   const handleChange = (e) => {

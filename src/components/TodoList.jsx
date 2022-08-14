@@ -1,6 +1,6 @@
 import React from "react";
 import Todo from "./Todo";
-import '../styles/TodoList.scss'
+import "../styles/TodoList.scss";
 const TodoList = ({ todoArray, toggleComplete, removeTodo }) => {
   return (
     <div className="todoList">

@@ -6,6 +6,8 @@
   align-items: center;
   justify-content: space-between;
   padding: 0 22px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
   p {
     font-family: "Exo 2";
     font-style: normal;
@@ -16,21 +18,20 @@
   }
   .left {
     display: flex;
-    .sumOfComp{
-        margin-left: 13px;
-      }
-  }
-  .right{
-    p{
-        cursor: pointer;
+    .sumOfComp {
+      margin-left: 13px;
     }
   }
-  
+  .right {
+    p {
+      cursor: pointer;
+    }
+  }
 }
-@media (max-width: 550px){
-    .footer{
-        p{
-            font-size: 1rem;
-        }
+@media (max-width: 550px) {
+  .footer {
+    p {
+      font-size: 1rem;
     }
   }
+}

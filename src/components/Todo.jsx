@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/Todo.scss";
-import '../styles/CheckBox.css'
-import { RiDeleteBin5Line } from 'react-icons/ri';
+import "../styles/CheckBox.css";
+import { RiDeleteBin5Line } from "react-icons/ri";
 const Todo = ({ todo, toggleComplete, removeTodo }) => {
   const handleCheck = () => {
     toggleComplete(todo.id);
@@ -13,14 +13,16 @@ const Todo = ({ todo, toggleComplete, removeTodo }) => {
     <div className="todoItem">
       <label className="control control-checkbox">
         <input
-        className="checkInput"
+          className="checkInput"
           type="checkbox"
           onClick={handleCheck}
           defaultChecked={todo.completed ? true : false}
         />
         <div className="control_indicator"></div>
       </label>
-      <p id="text" className={todo.completed ? 'done':null}>{todo.title}</p>
+      <p id="text" className={todo.completed ? "done" : null}>
+        {todo.title}
+      </p>
       <RiDeleteBin5Line className="deleteItem" onClick={handleDelete} />
     </div>
   );
