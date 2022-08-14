@@ -36,3 +36,15 @@
         visibility: hidden;
     }
 }
+@media (max-width: 750px){
+    .todoItem{
+        padding:18px;
+        #text{
+            padding-left: 16px;
+            font-size: 16px;
+            line-height: 19px;
+            margin-right: 14px;
+        }
+    }
+   
+  }
