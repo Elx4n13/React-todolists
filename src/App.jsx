@@ -1,6 +1,6 @@
 import React from "react";
 import TodosContainer from "./components/TodosContainer";
-import background from "./images/background.png";
+import background from "./images/backgroundd.png";
 import "./App.css";
 const App = () => {
   return (
