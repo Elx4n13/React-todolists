@@ -82,6 +82,7 @@ const TodosContainer = () => {
       if (todo.completed) {
         count++;
       }
+      return count;
     });
     return count;
   };
